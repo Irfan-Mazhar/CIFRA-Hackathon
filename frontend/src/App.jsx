@@ -3,14 +3,14 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsi
 
 // --- Configuration ---
 const BASE_BRAIN_AGE = 20;
-const REACTION_TEST_ROUNDS = 5;
-const MATH_TEST_ROUNDS = 7;
+const REACTION_TEST_ROUNDS = 3;
+const MATH_TEST_ROUNDS = 3;
 const MEMORY_START_LEVEL = 3;
-const BASELINE_THRESHOLD = 5; // Min games needed to calculate a baseline
+const BASELINE_THRESHOLD = 1; // Min games needed to calculate a baseline
 const ALERT_DEVIATION_PERCENT = 0.15; // 15% deviation
-const ALERT_CONSECUTIVE_GAMES = 3;
+const ALERT_CONSECUTIVE_GAMES = 1;
 
-// --- Helper Functions ---
+// --- Helper Functions --
 const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 const formatDate = (timestamp) => new Date(timestamp).toLocaleDateString([], { month: 'short', day: 'numeric' });
 
